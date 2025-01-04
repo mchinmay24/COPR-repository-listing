@@ -13,7 +13,9 @@ Usage
 
 
 bash
-repoList <repository_name>
+sudo repoList <repository_name>
+(it will enter root user's shell so you need to exit it for output to be printed)
+
 
 
 Replace <repository_name> with the name of the Copr repository you want to list packages for, in the format username/repository_name.
@@ -29,7 +31,7 @@ Installation
 
 1. Copy the repoList script to a directory in your system's PATH (e.g., /usr/local/bin or ~/.local/bin).
 2. Make the script executable with chmod +x repoList.
-3. To add the repoList script to your Bash path, you'll need to move it to a directory that's already in your system's PATH environment variable. Here are the steps:
+3.(optional)works without adding to path but perferable
 
 Option 1: Move to /usr/local/bin
 
@@ -49,12 +51,9 @@ Pull requests and issues are welcome!
 
 License
 
-[Your License]
-
-Replace [Your License] with the license you choose for your project.
+GPL-3.0 license 
 
 Author
 
 Chinmay Malik
 
-Replace Chinmay Malik with your actual name.
