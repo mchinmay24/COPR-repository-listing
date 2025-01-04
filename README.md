@@ -1,18 +1,17 @@
 # COPR-repository-listing
-Enables the copr repo if not enabled already and lists all the available packages in it 
-
-repoList
+Lists all the available packages in it and enables the repo on demand
 
 A Bash script to list packages in a Copr repository.
 
 Description
 
-This script enables a specified Copr repository and lists all packages available in it. If the repository is not already enabled, the script will enable it.
-
+This script lists all packages available in a copr repository.
 
 Usage:
 
-sudo repoList <repository_name>(format : username/repository_name)
+repoList <repository_name>(format : username/repository_name) {for lisiting packages in a repository}
+
+sudo repoList <repository_name>(format : username/repository_name) {for lisiting packages and enabling the repository as well}
 
 Requirements
 
