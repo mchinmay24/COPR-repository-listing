@@ -1,0 +1,18 @@
+bash
+#!/bin/bash
+
+# Check if the repository name is provided
+if [ -z "$1" ]; then
+  echo "Error: Repository name is required."
+  echo "Usage: $0 <repository_name>"
+  exit 1
+fi
+
+# Check if the repository is enabled
+if ! dnf copr list | grep -q "$1"; then
+  # Enable the repository if it's not already enabled
+  sudo dnf copr enable "$1" || { echo "Failed to enable repository"; exit 1; }
+fi
+
+# List all packages in the repository
+copr list-packages "$1" | jq -r '.[] | .name'
