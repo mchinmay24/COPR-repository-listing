@@ -13,8 +13,6 @@ This script enables a specified Copr repository and lists all packages available
 Usage:
 
 sudo repoList <repository_name>(format : username/repository_name)
-exit(if it enters root shell)
-(it will enter root user's shell so you need to exit it for output to be printed)
 
 Requirements
 
