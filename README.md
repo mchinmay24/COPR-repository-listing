@@ -5,30 +5,25 @@ repoList
 
 A Bash script to list packages in a Copr repository.
 
-#Description
+Description
 
 This script enables a specified Copr repository and lists all packages available in it. If the repository is not already enabled, the script will enable it.
 
-#Usage
 
+Usage:
 
-bash
-sudo repoList <repository_name>
+sudo repoList <repository_name>(format : username/repository_name)
 exit(if it enters root shell)
 (it will enter root user's shell so you need to exit it for output to be printed)
 
-
-
-Replace <repository_name> with the name of the Copr repository you want to list packages for, in the format username/repository_name.
-
-#Requirements
+Requirements
 
 - Bash shell
 - copr command-line tool
 - dnf package manager
 - jq JSON processor
 
-#Installation
+Installation
 
 1.(optional)works without adding to path but perferable
 
@@ -46,11 +41,11 @@ Replace <repository_name> with the name of the Copr repository you want to list 
 
 Pull requests and issues are welcome!
 
-#License
+License
 
 GPL-3.0 license 
 
-#Author
+Author
 
 Chinmay Malik
 
