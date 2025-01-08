@@ -26,15 +26,15 @@ Installation
 
   Option 1: Move to /usr/local/bin
 
-    1. Copy the script: sudo cp repoList /usr/local/bin/
-    2. Make it executable: sudo chmod +x /usr/local/bin/repoList
+    1. sudo cp repoList /usr/local/bin/
+    2. sudo chmod +x /usr/local/bin/repoList
 
   Option 2: Move to ~/.local/bin (recommended for personal use)
 
-    1. Create the directory: mkdir -p ~/.local/bin
-    2. Copy the script: cp repoList ~/.local/bin/
-    3. Make it executable: chmod +x ~/.local/bin/repoList
-    4. Add ~/.local/bin to your PATH: Add the following line to your ~/.bashrc file: export PATH=$PATH:~/.local/bin
+    1. mkdir -p ~/.local/bin
+    2. cp repoList ~/.local/bin/
+    3. chmod +x ~/.local/bin/repoList
+    4. Add the following line to your ~/.bashrc file: export PATH=$PATH:~/.local/bin
 
 Pull requests and issues are welcome!
 
