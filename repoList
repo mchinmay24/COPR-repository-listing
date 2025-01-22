@@ -3,7 +3,10 @@
 # Check if the repository name is provided
 if [ -z "$1" ]; then
   echo "Error: Repository name is required."
-  echo "Usage: $0 <repository_name>"
+  echo "Usage:
+repoList <repository_name>(format : username/repository_name) {for lisiting packages in a repository}
+
+sudo repoList <repository_name>(format : username/repository_name) {for lisiting packages and enabling the repository as well}"
   exit 1
 fi
 
